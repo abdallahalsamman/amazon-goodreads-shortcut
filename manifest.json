@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "1 click amazon books to goodreads",
+  "version": "0.1.0",
+  "description": "reach amazon books on goodreads with only 1 click!",
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" },
+  "web_accessible_resources": ["*.svg"],
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.amazon.com/*"]
+  }]
+}
